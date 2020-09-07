@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>X and O</title>
+  </head>
+  <body>
+    <div id="board" class="board">
+      <h1 class="title">Tic <span class="uniqueColor">Tac</span> Toe</h1>
+      <div class="status-action">
+        <div class="status">× is next</div>
+
+        <div class="reset" onclick="cellReset();">Reset</div>
+      </div>
+      <div class="game-grid">
+        <div class="game-cell first" onclick="pressXO(this);"></div>
+        <div class="game-cell second" onclick="pressXO(this);"></div>
+        <div class="game-cell third" onclick="pressXO(this);"></div>
+        <div class="game-cell fourth" onclick="pressXO(this);"></div>
+        <div class="game-cell fifth" onclick="pressXO(this);"></div>
+        <div class="game-cell sixth" onclick="pressXO(this);"></div>
+        <div class="game-cell seventh" onclick="pressXO(this);"></div>
+        <div class="game-cell eighth" onclick="pressXO(this);"></div>
+        <div class="game-cell ninth" onclick="pressXO(this);"></div>
+      </div>
+    </div>
+    <div id="demo"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

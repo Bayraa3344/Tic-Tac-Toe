@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cell-size: 80px;
+  --mp-size: 50px;
+  --mpf1-size: 25px;
+  --xo-size: 80px;
+  --dark-color: #545454;
+  --white-color: #fff;
+  --background-color: #7fff94;
+}
+
+body {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  color: var(--dark-color);
+}
+
+.board {
+  margin: var(--mp-size);
+  padding: var(--mp-size);
+  background: var(--background-color);
+  border-radius: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.uniqueColor {
+  color: var(--white-color);
+}
+
+.status-action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--mpf1-size);
+  font-size: var(--mpf1-size);
+}
+
+.status:hover {
+  color: var(--white-color);
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: var(--white-color);
+}
+
+.white {
+  color: var(--white-color);
+}
+
+.game-grid {
+  display: grid;
+  /* grid-template-columns: 250px 250px 250px; Товчилсон хэлбэр */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: var(--mp-size);
+  background: #65cc76;
+}
+
+.game-cell {
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: var(--cell-size);
+  width: var(--cell-size);
+  font-size: var(--xo-size);
+}
